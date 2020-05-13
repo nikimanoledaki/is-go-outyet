@@ -4,13 +4,14 @@ Using Docker and Go's example program called ```outyet``` to start a server that
 
 ## Get started
 ```
-go build -t outyet .
-docker run --publish 6060:8080 --name test --rm outyet
+git clone https://github.com/nikimanoledaki/is-go-outyet.git
+cd is-go-outyet
+docker run -p 6060:8080 niki2401/outyet:latest
 ```
 
-Then, open ```localhost:6060``` in your web browser.
+Then, open `localhost:6060` in your web browser.
 
-To exit the program, run ```docker stop test``` from another terminal.
+To exit the program, press the `control` + `C` keys.
 
 ## Run the tests
 ```
